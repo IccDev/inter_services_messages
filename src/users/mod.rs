@@ -1,5 +1,4 @@
 use serde_derive::{Deserialize, Serialize};
-use remoc::rch;
 
 
 
@@ -10,6 +9,5 @@ pub struct RegisterUser {
     pub password: String,
     pub user_token: String,
     pub email: String,
-    pub two_factor: bool,
-    pub sender: rch::oneshot::Sender<Result<(), String>>,
+    pub two_factor: bool
 }
