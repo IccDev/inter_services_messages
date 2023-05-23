@@ -1,0 +1,11 @@
+[package]
+name = "inter_services_messages"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = "1.0"
+serde_json = "1.0"
+remoc = { version = "0.10", features = ["rch"] }
