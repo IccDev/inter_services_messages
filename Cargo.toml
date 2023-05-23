@@ -7,5 +7,5 @@ edition = "2021"
 
 [dependencies]
 serde = "1.0"
-serde_json = "1.0"
+serde_derive = "1.0"
 remoc = { version = "0.10", features = ["rch"] }
