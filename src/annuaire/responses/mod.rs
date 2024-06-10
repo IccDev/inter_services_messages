@@ -10,6 +10,7 @@ use common_crates::{
 #[serde(crate = "self::serde")]
 pub enum AnnuaireResponse {
     Search(AnnuaireSearchRespone),
-    Create(i32)
+    Create(i32),
+    Creates(Vec<i32>)
 }
 
