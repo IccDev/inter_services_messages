@@ -11,7 +11,7 @@ use common_crates::{
 #[serde(crate = "self::serde")]
 pub enum AnnuaireMsg {
     Search(AnnuaireSearchMsg),
-    CreateEglise(AnnuaireCreateEgliseMsg),
+    CreateEglises(Vec<AnnuaireCreateEgliseMsg>),
     /*CreateUser(User),
     CreateCompetences(Competence),
     CreateDepartement(Departement),
