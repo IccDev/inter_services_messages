@@ -1,10 +1,10 @@
-//pub mod annuaire;
+pub mod annuaire;
 
 use common_crates::{
     serde::{self, Deserialize, Serialize},
     remoc::rch,
 };
-//use self::annuaire::AnnuaireMessage;
+use self::annuaire::{AnnuaireMsg, AnnuaireResponse};
 
 #[derive(Debug, Serialize, Deserialize)]
 #[serde(crate = "self::serde")]
@@ -17,14 +17,14 @@ pub struct Message {
 #[derive(Debug, Serialize, Deserialize)]
 #[serde(crate = "self::serde")]
 pub enum MessageData {
-    Annuaire(String/*AnnuaireMessage*/)
+    Annuaire(AnnuaireMsg)
 }
 
 //###### Message to receive #######################
 #[derive(Debug, Serialize, Deserialize)]
 #[serde(crate = "self::serde")]
 pub enum ResponseData {
-    Annuaire(String/*self::annuaire::AnnuaireResponse*/)
+    Annuaire(AnnuaireResponse)
 }
 
 #[derive(Debug, Serialize, Deserialize)]
