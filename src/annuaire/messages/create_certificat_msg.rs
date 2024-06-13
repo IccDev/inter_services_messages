@@ -4,7 +4,8 @@ use common_crates::{
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
 #[serde(crate = "self::serde")]
-pub struct AnnuaireLinkEgliseDepartMsg {
-    pub eglise_id: i32,
-    pub depart_ids: Vec<i32>
+pub struct AnnuaireCreateCertificatMsg {
+    pub nom: Option<String>,
+    pub abbreviation: Option<String>,
+    pub description: Option<String>,
 }
