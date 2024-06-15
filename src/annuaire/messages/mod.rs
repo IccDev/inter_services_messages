@@ -70,6 +70,6 @@ pub enum AnnuaireMsg {
     LinkUserDiplomes(Vec<AnnuaireLinkUserDiplomeMsg>),
     LinkUserEducations(Vec<AnnuaireLinkUserEducationMsg>),
     LinkUserLangues(Vec<AnnuaireLinkUserLangueMsg>),
-    LinkUserPlusInfos(AnnuaireLinkUserPluseInfosMsg),
+    LinkUserPlusInfos(Vec<AnnuaireLinkUserPluseInfosMsg>),
     LinkUserProfessions(Vec<AnnuaireLinkUserProfessionMsg>)
 }
