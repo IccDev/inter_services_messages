@@ -68,7 +68,7 @@ pub enum AnnuaireMsg {
     LinkEgliseDepart(Vec<AnnuaireLinkEgliseDepartMsg>),
     LinkUserCertificats(Vec<AnnuaireLinkUserCertificatMsg>),
     LinkUserCompetences(Vec<AnnuaireLinkUserCompetenceMsg>),
-    LinkUserContact(AnnuaireLinkUserContactMsg),
+    LinkUserContacts(Vec<AnnuaireLinkUserContactMsg>),
     LinkUserDiplomes(Vec<AnnuaireLinkUserDiplomeMsg>),
     LinkUserEducations(Vec<AnnuaireLinkUserEducationMsg>),
     LinkUserLangues(Vec<AnnuaireLinkUserLangueMsg>),
