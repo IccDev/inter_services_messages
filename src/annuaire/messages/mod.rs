@@ -62,7 +62,7 @@ pub enum AnnuaireMsg {
     CreateDomaines(Vec<AnnuaireCreateDomaineMsg>),
     CreateEcoles(Vec<AnnuaireCreateEcoleMsg>),
     CreateEntreprises(Vec<AnnuaireCreateEntrepriseMsg>),
-    CreatePlusInfos(AnnuaireCreatePlusInfosMsg),
+    CreatePlusInfos(Vec<AnnuaireCreatePlusInfosMsg>),
     CreateSpecialites(Vec<AnnuaireCreateSpecialiteMsg>),
     CreateTitres(Vec<AnnuaireCreateTitreMsg>),
     LinkEgliseDepart(Vec<AnnuaireLinkEgliseDepartMsg>),
