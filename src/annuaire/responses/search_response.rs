@@ -22,7 +22,7 @@ pub struct UserRespone {
     pub contact: Contact,
     pub langues: Vec<Langue>,
     pub educations: Vec<Education>,
-    pub professions: Vec<Profession>
+    pub professions: Vec<Profession>,
     pub diplomes: Vec<Diplome>,
     pub certificats: Vec<Certificat>,
     pub competences: Vec<Competence>,
