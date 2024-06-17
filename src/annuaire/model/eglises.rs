@@ -28,5 +28,5 @@ pub struct EgliseDepartementsAdresse {
     pub nom: String,
     pub description: Option<String>,
     pub departements: Vec<Departement>,
-    pub adresse: Adresse
+    pub adresse: Option<Adresse>
 }

@@ -18,5 +18,5 @@ pub struct EntrepriseAdresse {
     pub id: i32,
     pub nom: String,
     pub description: Option<String>,
-    pub adresse: Adresse
+    pub adresse: Option<Adresse>
 }
