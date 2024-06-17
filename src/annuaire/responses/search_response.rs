@@ -17,16 +17,16 @@ pub struct AnnuaireSearchRespone {
 #[derive(Debug, Serialize, Deserialize, Clone)]
 #[serde(crate = "self::serde")]
 pub struct UserRespone {
-    pub profile: Profile,
-    pub eglise: EgliseDepartementsAdresse,
-    pub contact: Contact,
+    pub profile: Option<Profile>,
+    pub eglise: Option<EgliseDepartementsAdresse>,
+    pub contact: Option<Contact>,
     pub langues: Vec<Langue>,
     pub educations: Vec<Education>,
     pub professions: Vec<Profession>,
     pub diplomes: Vec<Diplome>,
     pub certificats: Vec<Certificat>,
     pub competences: Vec<Competence>,
-    pub plusinfos: PlusInfos
+    pub plusinfos: Option<PlusInfos>
 }
 
 
