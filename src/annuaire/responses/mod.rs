@@ -14,7 +14,7 @@ use common_crates::{
 #[derive(Debug, Serialize, Deserialize, Clone)]
 #[serde(crate = "self::serde")]
 pub enum AnnuaireResponse {
-    Search(AnnuaireSearchRespone),
+    Search(Vec<UserRespone>),
     Create(i32),
     Creates(Vec<i32>),
     AllInfosToCreateUser(AnnuaireAllInfosToCreateUserRespone),

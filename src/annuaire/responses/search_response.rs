@@ -10,12 +10,6 @@ use crate::annuaire::model::{
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
 #[serde(crate = "self::serde")]
-pub struct AnnuaireSearchRespone {
-    pub data: Vec<UserRespone>
-}
-
-#[derive(Debug, Serialize, Deserialize, Clone)]
-#[serde(crate = "self::serde")]
 pub struct UserRespone {
     pub profile: Option<Profile>,
     pub eglise: Option<EgliseDepartementsAdresse>,
