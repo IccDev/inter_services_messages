@@ -9,8 +9,10 @@ mod ecoles;
 mod eglises;
 mod entreprises;
 mod langues;
-mod titres;
+mod plus_infos;
+mod profiles;
 mod specialites;
+mod titres;
 
 
 pub use adresses::*;
@@ -24,5 +26,7 @@ pub use ecoles::*;
 pub use eglises::*;
 pub use entreprises::*;
 pub use langues::*;
-pub use titres::*;
+pub use plus_infos::*;
+pub use profiles::*;
 pub use specialites::*;
+pub use titres::*;
