@@ -10,6 +10,7 @@ mod create_domaine_msg;
 mod create_ecole_msg;
 mod create_entreprise_msg;
 mod create_plusinfos_msg;
+mod create_profile_msg;
 mod create_specialite_msg;
 mod create_titre_msg;
 mod link_user_certificat_msg;
@@ -34,6 +35,7 @@ pub use create_ecole_msg::*;
 pub use create_entreprise_msg::*;
 pub use create_specialite_msg::*;
 pub use create_plusinfos_msg::*;
+pub use create_profile_msg::*;
 pub use create_titre_msg::*;
 pub use link_user_certificat_msg::*;
 pub use link_user_competence_msg::*;
@@ -53,6 +55,7 @@ pub enum AnnuaireMsg {
     GetInfosToCreateUser,
     GetInfosToLinkEgliseAndDepart,
     Search(AnnuaireSearchMsg),
+    CreateUser(AnnuaireCreateProfileMsg),
     CreateEglises(Vec<AnnuaireCreateEgliseMsg>),
     CreateDepartements(Vec<AnnuaireCreateDepartementMsg>),
     CreateLangues(Vec<AnnuaireCreateLangueMsg>),
