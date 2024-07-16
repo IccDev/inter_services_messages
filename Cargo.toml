@@ -6,5 +6,5 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-#common_crates = { git = "https://github.com/IccDev/common_crates.git", branch = "master" }
-common_crates = { path = "../common_crates"}
+common_crates = { git = "https://github.com/IccDev/common_crates.git", branch = "master" }
+#common_crates = { path = "../common_crates"}
