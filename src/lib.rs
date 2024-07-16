@@ -2,17 +2,17 @@ pub mod annuaire;
 
 use common_crates::{
     serde::{self, Deserialize, Serialize},
-    remoc::rch,
+    //remoc::rch,
 };
-use self::annuaire::{AnnuaireMsg, AnnuaireResponse};
-
+use self::annuaire::{messages::AnnuaireMsg, responses::AnnuaireResponse};
+/*
 #[derive(Debug, Serialize, Deserialize)]
 #[serde(crate = "self::serde")]
 pub struct Message {
     pub data: MessageData,
     pub sender: rch::oneshot::Sender<Result<ResponseData, String>>
 }
-
+*/
 //###### Message to send ########################
 #[derive(Debug, Serialize, Deserialize)]
 #[serde(crate = "self::serde")]
