@@ -5,7 +5,7 @@ use common_crates::{
 use crate::annuaire::model::Adresse;
 use super::*;
 
-#[derive(Debug, Serialize, Deserialize, Clone)]
+#[derive(Debug, Serialize, Deserialize, Clone, Default)]
 #[serde(crate = "self::serde")]
 pub struct AnnuaireCreateProfileMsg {
     pub nom: Option<String>,
@@ -28,6 +28,8 @@ pub struct AnnuaireCreateProfileMsg {
     pub educations_ids: Vec<EducationIds>,
     pub professions_ids: Vec<ProfessionIds>,
     pub diplomes_ids: Vec<i32>,
+    pub certificats_ids: Vec<i32>,
+    pub competences_ids: Vec<i32>,
     pub educations: Vec<Education>,
     pub professions: Vec<Profession>,
     pub diplomes: Vec<AnnuaireCreateDiplomeMsg>,

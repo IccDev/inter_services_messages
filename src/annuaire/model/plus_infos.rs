@@ -7,5 +7,6 @@ use common_crates::{
 #[serde(crate = "self::serde")]
 pub struct PlusInfos {
     pub id: i32,
+    pub profile_id: Option<i32>,
     pub description: Option<String>,
 }

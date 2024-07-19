@@ -9,6 +9,7 @@ use super::{Departement, Adresse};
 pub struct Eglise {
     pub id: i32,
     pub nom: String,
+    pub adresse_id: Option<i32>,
     pub description: Option<String>,
 }
 
