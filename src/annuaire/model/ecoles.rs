@@ -19,5 +19,4 @@ pub struct EcoleAdresse {
     pub nom: String,
     pub description: Option<String>,
     pub adresse: Option<Adresse>
-    pub adresse_id: Option<i32>
 }

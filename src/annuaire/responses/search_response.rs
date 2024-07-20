@@ -4,7 +4,7 @@ use common_crates::{
 use crate::annuaire::model::{
     EgliseDepartementsAdresse, Langue, Domaine, Titre, Specialite, 
     Diplome, Certificat, Competence, Profile, Contact,
-    //EcoleAdresse, EntrepriseAdresse, PlusInfos
+    EcoleAdresse, EntrepriseAdresse, PlusInfos
 };
 
 
