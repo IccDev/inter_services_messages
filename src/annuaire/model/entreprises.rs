@@ -1,7 +1,7 @@
 use common_crates::{
     serde::{self, Deserialize, Serialize}
 };
-
+use crate::annuaire::model::Adresse;
 
 #[derive(Debug, Serialize, Deserialize, Clone)]
 #[serde(crate = "self::serde")]
