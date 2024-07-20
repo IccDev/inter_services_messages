@@ -25,7 +25,7 @@ pub struct UserProfile {
     pub star: Option<bool>,
     pub adresse_id: Option<i32>,
     pub contact_id: Option<i32>,
-    pub eglise_id: Option<Stri32ing>,
+    pub eglise_id: Option<String>,
     pub consentement_nom: Option<bool>,
     pub consentement_gsm: Option<bool>,
     pub consentement_email: Option<bool>,
